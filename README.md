@@ -1,7 +1,7 @@
 # C-lang
 The C language from ANSI-C to the C11 edition
 
-# The *C* Programming Style Guide for mweet.me <a href="http://mweet.me" target="_blank">&raquo;</a>
+# The *C* Programming Style Guide for mweet.me 
 
 
 <a name="table-of-content"></a>
@@ -56,3 +56,7 @@ int main(void){
 ```
 
 **[ &#8679; to the top](#table-of-content)**
+
+
+
+&copy; mweet.me - Visit our website <a href="http://mweet.me" target="_blank">&raquo;</a>
