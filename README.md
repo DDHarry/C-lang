@@ -4,6 +4,14 @@ The C language from ANSI-C to the C11 edition
 # The *C* Programming Style Guide for mweet.me 
 
 
+## Conventions
+
+
+## Sources
+
+On gcc.gnu.org, the [GCC manual](https://gcc.gnu.org/onlinedocs/)
+
+
 <a name="table-of-content"></a>
 ## Table of content
 
