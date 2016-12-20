@@ -18,15 +18,19 @@ The standard define two environments
   1. the *freestanding environment*, like, for example, an OS-kernel;
   2. a *hosted environment* where libs and startup go through a *main* function defined as
   
-  ```c
-  
-  int main(void)
-  
-  ```
   
   
   or
   
+  
+ ```c
+ 
+ int main(void)
+ 
+ ```
+ 
+ basically
+ 
   
   ```c
   
