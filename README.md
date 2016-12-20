@@ -1,7 +1,8 @@
 # C-lang
 The C language from ANSI-C to the C11 edition
 
-# The Basics of the C language
+# The *C* Programming Style Guide for [mweet.me](http://mweet.me)
+
 
 <a name="table-of-content"></a>
 ## Table of content
@@ -12,18 +13,9 @@ The C language from ANSI-C to the C11 edition
 
 t
 
-t
-
-e
-
-s
-
-t
-
-=
 
 
-<a name="compiler-short-reminder"></a>
+<a name="1"></a><a name="compiler-short-reminder"></a>
 ## [1](#compiler-short-reminder) The Compiler : A short reminder
 
 
@@ -41,7 +33,12 @@ gcc greetings.c
 
 
 
-<a name="main-comment-indentation"></a>
+
+
+**[ &#8679; to the top](#table-of-content)**
+
+
+<a name="2"></a><a name="main-comment-indentation"></a>
 ## [2](#main-comment-indentation) Main - Comment - Indentation
 
 ```c
