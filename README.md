@@ -19,7 +19,9 @@ The standard define two environments
   2. a *hosted environment* where libs and startup go through a *main* function defined as
  ```c
  
- int main(void)
+ int main(void){
+ 	...
+}
  
  ```
  
@@ -28,7 +30,9 @@ The standard define two environments
   
   ```c
   
-  int main(int, char*[]).
+  int main(int, char*[]){
+		...
+	}
   
   ```
   
