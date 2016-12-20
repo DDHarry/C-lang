@@ -1,7 +1,5 @@
-# C-lang
-The C language from ANSI-C to the C11 edition
-
 # The *C* Programming Style Guide for mweet.me 
+The C language from ANSI-C to the C11 edition
 
 
 ## Conventions
@@ -16,7 +14,7 @@ $> pwd      /* in the Unix shell */
 
 The standard define two environments
   1. the *freestanding environment*, like, for example, an OS-kernel;
-  2. a *hosted environment* where libs and startup go through a *main* function defined as
+  2. a *hosted environment* where libs and startup go through a ```main``` function defined as
  ```c
  
  int main(void){
@@ -58,22 +56,22 @@ t
 
 
 <a name="1"></a><a name="compiler-short-reminder"></a>
-## [1](#compiler-short-reminder) The Compiler : A short reminder
+## [1](#compiler-short-reminder) A compiler short reminder
 
 
 
 We get the *GCC* compiler, even it can be linked to the CLang compiler, as for example on MacOS. We go from the *ANSI-C* original edition to the latest and fourth version *C11*
 
 ```c
-gcc -ansi greetings.c
-    -ansi               ::  compile respect to the ANSI-C standard ratified in 1989,
-    -std=c90            >   also C89,
-    -std=iso-9899:1990  >   published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
-    -std=c11            ::  ISO/IEC 9899:2011, the fourth version
-    -std=iso-9899:2011  >
-    -std=gnu11          ::  The default choice. On rare occasions, *GCC* provides extensions (G11 = C11 with GNU extensions)
-    -pedantic           ::  to obtain all the diafnostics required by the standard,
-    -pedantic-errors    ::  if you want them to be erros rather than warnings
+$: gcc -ansi greetings.c
+       -ansi               ::  compile respect to the ANSI-C standard ratified in 1989,
+       -std=c90            >   also C89,
+       -std=iso-9899:1990  >   published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
+        -std=c11            ::  ISO/IEC 9899:2011, the fourth version
+       -std=iso-9899:2011  >
+       -std=gnu11          ::  The default choice. On rare occasions, *GCC* provides extensions (G11 = C11 with GNU extensions)
+       -pedantic           ::  to obtain all the diafnostics required by the standard,
+       -pedantic-errors    ::  if you want them to be erros rather than warnings
 ```
 
 
@@ -102,7 +100,7 @@ int main(void){
 
 ## We choose:
 
-   1. to include the *'{'* on the same line as the function declaration;
+   1. to include the ``` { ``` on the same line as the function declaration;
    
    2. the *C11* satndard to define our ```main``` function, idem est, with ```int, void``` and ```return```
     
@@ -113,4 +111,4 @@ int main(void){
 
 
 
-&copy; mweet.me - Visit our website <a href="http://mweet.me" target="_blank">&raquo;</a>
+&copy; mweet.me - Visit our website <a href="http://mweet.me" target="_blank">&raquo;&rsaquo;</a>
