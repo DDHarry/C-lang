@@ -17,12 +17,7 @@ $> pwd      /* in the Unix shell */
 The standard define two environments
   1. the *freestanding environment*, like, for example, an OS-kernel;
   2. a *hosted environment* where libs and startup go through a *main* function defined as
-  
-  
-  
   or
-  
-  
  ```c
  
  int main(void)
