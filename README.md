@@ -19,6 +19,7 @@ The standard define two environments
   2. a *hosted environment* where libs and startup go through a ``` main ``` function defined as
   
   ```c
+  /* A comment */
   int main(void)
   ```
   
