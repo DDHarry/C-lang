@@ -9,7 +9,7 @@ The C language from ANSI-C to the C11 edition
 
 ## Sources
 
-On gcc.gnu.org, the [GCC manual](https://gcc.gnu.org/onlinedocs/)
+From gcc.gnu.org, the [GCC manual](https://gcc.gnu.org/onlinedocs/)
 
 
 <a name="table-of-content"></a>
