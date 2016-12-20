@@ -1,7 +1,7 @@
 # C-lang
 The C language from ANSI-C to the C11 edition
 
-# The *C* Programming Style Guide for [mweet.me](http://mweet.me target="_blank")
+# The *C* Programming Style Guide for [mweet.me]()<a href="https://mweet.me" target="_blank">&raquo;</a>
 
 
 <a name="table-of-content"></a>
