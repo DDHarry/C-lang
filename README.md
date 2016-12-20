@@ -111,4 +111,4 @@ int main(void){
 
 
 
-&copy; mweet.me - Visit our website <a href="http://mweet.me" target="_blank">&raquo;&rsaquo;</a>
+&copy; mweet.me - Visit our website <a href="http://mweet.me" target="_blank">&raquo;&raquo;</a>
