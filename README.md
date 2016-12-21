@@ -73,11 +73,17 @@ Choice of the different versions
        -std=c11            ::  ISO/IEC 9899:2011, the fourth version, two different forms,
        -std=iso-9899:2011  >    
 ```    
-Choice of an extension - *GCC* provides some extension to the C language
+Choice of an extension - GCC provides some extensions to the C language
 ```c
-       -std=gnu11          ::  The default choice. On rare occasions, they conflict with the C standard. G11 = C11 with GNU extensions
+       -std=gnu11          ::  The default choice. On rare occasions, they conflict with the C standard.
+       					G11 = C11 with GNU extensions, also GNU dialect of C11
 ```
 More, see [Chapter 6 Extensions to the C language family (p 383)](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/index.html#toc_C-Extensions)
+
+
+
+
+
 
 Debug - Diagnostics
 ```c
