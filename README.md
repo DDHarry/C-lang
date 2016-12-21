@@ -82,12 +82,13 @@ How GCC works?
 
 Filename suffixes
 ```c
-	file.c	:	C source code, must be preprocessed;
-	file.i	:	C-source code that should not be preprocessed;
-	file.s	:	Assembler code;
+	file.c	:	C source code, must be preprocessed
+	file.i	:	C-source code that should not be preprocessed
+	file.s	:	Assembler code
 	file.S
 	file.sx	:	Assembler code that must be preprocessed
-	other	:	An object file to be fed straight into licking. Any non recognized file's suffix file is treated in this manner.
+	other	:	An object file to be fed straight into licking.
+			Any non recognized file's suffix file is treated in this manner.
 ```
 
 
@@ -98,12 +99,12 @@ $: gcc -ansi greetings.c
 ```
 Choice of the different versions
 ```c
-       -ansi               ::  compile respect to the ANSI-C standard ratified in 1989. ANSI gets three writings
-       -std=c90                also C89,
-       -std=iso-9899:1990      published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
+       -ansi								::  compile respect to the ANSI-C standard ratified in 1989. Gets three different writings forms
+       -std=c90							>		also C89,
+       -std=iso-9899:1990  	>		published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
        
-       -std=c11            ::  ISO/IEC 9899:2011, the fourth version, two different forms,
-       -std=iso-9899:2011      
+       -std=c11							::	ISO/IEC 9899:2011, the fourth version, under two different forms
+       -std=iso-9899:2011		>		second form
 ```
 
 Choice of an extension - GCC provides some extensions to the C language
