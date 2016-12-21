@@ -76,16 +76,11 @@ Compilation is up to four stages always in that order
 
 __How GCC works?__
 
-1+2-  >>  Process and compile several input files	>	several assembler input files;
+Steps	1+2  ::  Process and compile several input files	>>	one assembler or several assembler input files;
+														      
+Step	3    ::  Each assembler input file			>>	object file
 
-or
-					
-						        >	one assembler input file;
-										      
-3-    >>  Each assembler input file			>	object file
-
-
-4-    >>  Linking combines				>	all the object files into an executable file.
+Step	4    ::  Linking combines				>>	all the object files into an executable file.
 
 
 Filename suffixes
