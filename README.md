@@ -64,6 +64,8 @@ We get the *GCC* compiler, even it can be linked to the CLang compiler, as for e
 
 ### 1.1 Options controlling the kind of input
 
+#### • The four compilation stages
+
 Compilation is up to four stages always in that order
 
 1. preprocessing;
@@ -82,6 +84,8 @@ Step	3    ::  Each assembler input file			>>	object file
 
 Step	4    ::  Linking combines				>>	all the object files into an executable file.
 
+
+#### • Filenames
 
 Filename suffixes
 ```c
@@ -111,21 +115,33 @@ Choice of the different versions
 
 Choice of an extension - GCC provides some extensions to the C language
 ```c
-	-std=gnu11          ::  The default choice. On rare occasions, they conflict with the C standard.
-                            G11 = C11 with GNU extensions, also GNU dialect of C11
+-std=gnu11          ::  The default choice. On rare occasions, they conflict with the C standard.
+                        G11 = C11 with GNU extensions, also GNU dialect of C11
 ```
 
 More, see [Chapter 6 Extensions to the C language family (p 383)](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/index.html#toc_C-Extensions)
 
 ```c
-	-fhosted          ::  targets a hosting environment which is almost everything except a kernel
-	-ffreestandings   ::  targets a freestanding environment for which the most obvious example is an OS kernel
+-fhosted          ::  targets a hosting environment which is almost everything except a kernel
+-ffreestandings   ::  targets a freestanding environment for which the most obvious example is an OS kernel
 ```
 
 More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/C-Dialect-Options.html#C-Dialect-Options)
 
 
-Debug - Diagnostics
+
+### 1.3 Overall options
+```c
+	-c	::	compile or assemble the source files but do not link them
+					The object filename is ```-.c, -.i, -.s etc ...``` into an ```-.o ``` filename
+	-S	::	stop after the compilation. The output is in the form of an assembler code file. -.c, -.i files > -.s
+		
+```
+
+
+
+
+### 1.X Debug - Diagnostics
 ```c
 	-pedantic         ::  to obtain all the diagnostics required by the standard
 	-pedantic-errors  ::  if you want them to be erros rather than warnings
