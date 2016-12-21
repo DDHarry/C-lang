@@ -65,19 +65,23 @@ We get the *GCC* compiler, even it can be linked to the CLang compiler, as for e
 ### 1.1 Options controlling the kind of input
 
 Compilation is up to four stages always in that order
+
 1. preprocessing;
+
 2. compilation proper;
+
 3. assembly;
+
 4. linking.
 
-How GCC works?
+__How GCC works?__
 
-1+2. Process and compile several input files	>	several assembler input files;
+1+2.  >>  Process and compile several input files	>	several assembler input files;
 					or
-						>	one assembler input file;
-3. Each assembler input file			>	object file
+						                                      >	one assembler input file;
+3.    >>  Each assembler input file			>	object file
 
-4. Linking combines				>	all the object files into an executable file.
+4.    >>  Linking combines				>	all the object files into an executable file.
 
 
 Filename suffixes
