@@ -10,10 +10,10 @@ $> pwd      /* in the Unix shell */
 	>> jane_doe/workspace
 ```
 
-• The *main* function
+• The ```main``` function
 
 The standard define two environments
-  1. the *freestanding environment*, like, for example, an OS-kernel;
+  1. the *freestanding environment*, when, for example, you build an OS-kernel;
   2. a *hosted environment* where libs and startup go through a ```main``` function defined as
  ```c
  
@@ -64,11 +64,13 @@ We get the *GCC* compiler, even it can be linked to the CLang compiler, as for e
 
 ```c
 $: gcc -ansi greetings.c
-       -ansi               ::  compile respect to the ANSI-C standard ratified in 1989,
+Choice of the different versions
+       -ansi               ::  compile respect to the ANSI-C standard ratified in 1989. ANSI gets three writings
        -std=c90            >   also C89,
        -std=iso-9899:1990  >   published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
-        -std=c11            ::  ISO/IEC 9899:2011, the fourth version
+       -std=c11            ::  ISO/IEC 9899:2011, the fourth version, two different forms,
        -std=iso-9899:2011  >
+Choice       
        -std=gnu11          ::  The default choice. On rare occasions, *GCC* provides extensions (G11 = C11 with GNU extensions)
        -pedantic           ::  to obtain all the diafnostics required by the standard,
        -pedantic-errors    ::  if you want them to be erros rather than warnings
