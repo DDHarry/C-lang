@@ -134,7 +134,8 @@ More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc
 ```c
 	-c	::	compile or assemble the source files but do not link them
 					The object filename is ```-.c, -.i, -.s etc ...``` into an ```-.o ``` filename
-	-S	::	stop after the compilation. The output is in the form of an assembler code file. -.c, -.i files > -.s
+	-S	::	stop after the compilation. The output is in the form of an assembler code file.
+					Means -.c, -.i files > -.s
 		
 ```
 
