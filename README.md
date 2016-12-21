@@ -88,7 +88,7 @@ Filename suffixes
 	file.S
 	file.sx	:	Assembler code that must be preprocessed
 	other	:	An object file to be fed straight into licking.
-			Any non recognized file's suffix file is treated in this manner.
+			    Any non recognized file's suffix file is treated in this manner.
 ```
 
 
@@ -99,24 +99,24 @@ Filename suffixes
 ```
 Choice of the different versions
 ```c
-	-ansi::compile respect to the ANSI-C standard ratified in 1989. Gets three different writings forms
-	-std=c90>also C89,
-	-std=iso-9899:1990>published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
-	-std=c11::ISO/IEC 9899:2011, the fourth version, under two different forms
-	-std=iso-9899:2011>second form
+	-ansi               ::  compile respect to the ANSI-C standard ratified in 1989. Gets three different writings forms
+	-std=c90            >   also C89,
+	-std=iso-9899:1990  >   published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
+	-std=c11            ::  ISO/IEC 9899:2011, the fourth version, under two different forms
+	-std=iso-9899:2011  >   second form
 ```
 
 Choice of an extension - GCC provides some extensions to the C language
 ```c
-	-std=gnu11::The default choice. On rare occasions, they conflict with the C standard.
-       G11 = C11 with GNU extensions, also GNU dialect of C11
+	-std=gnu11          ::  The default choice. On rare occasions, they conflict with the C standard.
+                            G11 = C11 with GNU extensions, also GNU dialect of C11
 ```
 
 More, see [Chapter 6 Extensions to the C language family (p 383)](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/index.html#toc_C-Extensions)
 
 ```c
-	-fhosted				::	targets a hosting environment which is almost everything except a kernel
-	-ffreestandings	::	targets a freestanding environment for which the most obvious example is an OS kernel
+	-fhosted          ::  targets a hosting environment which is almost everything except a kernel
+	-ffreestandings   ::  targets a freestanding environment for which the most obvious example is an OS kernel
 ```
 
 More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/C-Dialect-Options.html#C-Dialect-Options)
@@ -125,7 +125,7 @@ More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc
 Debug - Diagnostics
 ```c
 	-pedantic         ::  to obtain all the diagnostics required by the standard
-	-pedantic-errors	::  if you want them to be erros rather than warnings
+	-pedantic-errors  ::  if you want them to be erros rather than warnings
 ```
 
 
