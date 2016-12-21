@@ -62,6 +62,37 @@ t
 
 We get the *GCC* compiler, even it can be linked to the CLang compiler, as for example on MacOS. We go from the *ANSI-C* original edition to the latest and fourth version *C11*
 
+### 1.1 Options controlling the kind of input
+
+Compilation is up to four stages always in that order
+1. preprocessing;
+2. compilation proper;
+3. assembly;
+4. linking.
+
+How GCC works?
+
+1+2. Process and compile several input files	>	several assembler input files;
+					or
+						>	one assembler input file;
+3. Each assembler input file			>	object file
+
+4. Linking combines				>	all the object files into an executable file.
+
+
+Filename suffixes
+```c
+	file.c	:	C source code, must be preprocessed;
+	file.i	:	C-source code that should not be preprocessed;
+	file.s	:	Assembler code;
+	file.S
+	file.sx	:	Assembler code that must be preprocessed
+	other	:	An object file to be fed straight into licking. Any non recognized file's suffix file is treated in this manner.
+```
+
+
+
+### 1.2 Options controlling the C dialect
 ```c
 $: gcc -ansi greetings.c
 ```
@@ -72,17 +103,22 @@ Choice of the different versions
        -std=iso-9899:1990  >   published in 1990 (std=90). Ratified as an ISO standard (ISO/IEC 9899:1990)
        -std=c11            ::  ISO/IEC 9899:2011, the fourth version, two different forms,
        -std=iso-9899:2011  >    
-```    
+```
+
 Choice of an extension - GCC provides some extensions to the C language
 ```c
        -std=gnu11          ::  The default choice. On rare occasions, they conflict with the C standard.
        					G11 = C11 with GNU extensions, also GNU dialect of C11
 ```
+
 More, see [Chapter 6 Extensions to the C language family (p 383)](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/index.html#toc_C-Extensions)
 
+```c
+	-fhosted	::	targets a hosting environment which is almost everything except a kernel
+	-ffreestandings	::	targets a freestanding environment for which the most obvious example is an OS kernel
+```
 
-
-
+More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/C-Dialect-Options.html#C-Dialect-Options)
 
 
 Debug - Diagnostics
