@@ -158,13 +158,16 @@ More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc
 1. With these options, respect to the case, unrecognized input or assembly files (-c), not requiring compilation (-c, -S) or preprocessing (-E) files are ignored.
 
 2. The 'cmdFiles'
-```c
+
    • may recursively contain other @cmdFile1 ...
+   
    • Options in 'cmFile' are separated with white space, -opt1 opt2
-   • for whitespace option like -opt3 opt3_addOn, we get ' or ".Example "-opt3 opt3_addOn"    
+   
+   • for whitespace option like -opt3 opt3_addOn, we get ' or ".Example "-opt3 opt3_addOn" 
+   
    • \ for any character. Example \\
    
- ```
+
 
 
 ### 1.X Debug - Diagnostics
