@@ -165,7 +165,7 @@ More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc
    
     • for whitespace option like -opt3 opt3_addOn, we get ' or ".Example "-opt3 opt3_addOn" 
    
-    • \ for any character. Example \\
+    • \ for any character, including the backslash one, example \\
    
 
 
