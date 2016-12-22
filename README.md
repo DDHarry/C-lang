@@ -159,14 +159,16 @@ More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc
 
 2. The 'cmdFiles'
 ```c
-   may recursively contain other @cmdFile1 ...
-   Options in 'cmFile' are separated with white space, -opt1 opt2
-   for whitespace option like -opt3 opt3_addOn, we get ' or ".Example "-opt3 opt3_addOn"    
-   \ for any character. Example \\
-   ```
+   • may recursively contain other @cmdFile1 ...
+   • Options in 'cmFile' are separated with white space, -opt1 opt2
+   • for whitespace option like -opt3 opt3_addOn, we get ' or ".Example "-opt3 opt3_addOn"    
+   • \ for any character. Example \\
+   
+ ```
 
 
 ### 1.X Debug - Diagnostics
+
 ```c
 	-pedantic         ::  to obtain all the diagnostics required by the standard
 	-pedantic-errors  ::  if you want them to be erros rather than warnings
