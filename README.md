@@ -122,8 +122,8 @@ Choice of an extension - GCC provides some extensions to the C language
 More, see [Chapter 6 Extensions to the C language family (p 383)](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/index.html#toc_C-Extensions)
 
 ```c
--fhosted          ::  targets a hosting environment which is almost everything except a kernel
--ffreestandings   ::  targets a freestanding environment for which the most obvious example is an OS kernel
+  -fhosted          ::  targets a hosting environment which is almost everything except a kernel
+  -ffreestandings   ::  targets a freestanding environment for which the most obvious example is an OS kernel
 ```
 
 More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/C-Dialect-Options.html#C-Dialect-Options)
@@ -132,13 +132,40 @@ More, see [3.4 Options controlling C dialect](https://gcc.gnu.org/onlinedocs/gcc
 
 ### 1.3 Overall options
 ```c
-	-c	::	compile or assemble the source files but do not link them
-					The object filename is ```-.c, -.i, -.s etc ...``` into an ```-.o ``` filename
-	-S	::	stop after the compilation. The output is in the form of an assembler code file.
-					Means -.c, -.i files > -.s
-		
+  -c           ::  compile or assemble the source files but do not link them
+                   The object filename is ```-.c, -.i, -.s etc ...``` into an ```-.o ``` filename
+  -S           ::  stop after the compilation. The output is in the form of an assembler code file.
+                   Means -.c, -.i, ... files > -.s
+  -E           ::  stop after the preprocessing stage, hence the output is a preprocessed file > std output
+  -o file      ::  place output in the file 'file'. If not specified, the default is to put an 
+                   executable in 'a.out',
+                   the object file for 'source.suffix', namely 'source.c', in 'source.o'
+                   its assembler file in 'source.s'
+                   precompiled header in 'source.suffix.gch', namely, 'source.c.gch'
+                   all preprocessed C sources on standard output
+  -v           ::  print on standard error output the commands executed to run the stages of compilation and also
+                   the version number of the compiler driver program and of the preprocessor and the compiler proper.
+  -###         ::  like '-v' exept .) the commands are not executed ..) arguments are quoted unless
+                   they contain only alphanumeric characters or '.', '-', '/', '_'
+                   Useful for the shell script to capture the driver-generated command lines
+  --version    ::  display the GCC version number and copyright
+  @cmdFile     ::  read command-line options from 'cmdFile', the options are read in place of the originals
+                   if 'cmdFile' does not exist or cannot be read, the options receive a litteral treatment
 ```
 
+**_Notes_**
+
+1. With these options, respect to the case, unrecognized input or assembly files (-c), not requiring compilation (-c, -S) or preprocessing (-E) files are ignored.
+
+2. The 'cmdFiles'
+
+    may recursively contain other @cmdFile1 ...
+
+    Options in 'cmFile' are separated with white space, -opt1 opt2
+    
+    for whitespace option like -opt3 opt3_addOn, we get ' or ".Example "-opt3 opt3_addOn"    
+    
+    \ for any character. Example \\
 
 
 
