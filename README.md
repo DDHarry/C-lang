@@ -212,10 +212,10 @@ More? See GCC manual, [3.9 Options for debugging your program](https://gcc.gnu.o
 Optimizing compilation takes more time and more memory for a large function.
 
 ```c
-  -O0   ::  the default. Reduce compilation time and make the debugging produce the expected results
-  -O    ::  (big O like Op). Try to reduce code size and execution time, quickly and simply
+  -O0   :: the default. Reduce compilation time and make the debugging produce the expected results
+  -O    :: (big O like Op). Try to reduce code size and execution time, quickly and simply
   -O1   >
-  -O2
+  -O2   ::  More optimization. Increase the compilation time and performance of the generated code.
 ```
 More? See GCC manual, [3.10 Options that control optimizations](https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/Optimize-Options.html#Optimize-Options)
 
