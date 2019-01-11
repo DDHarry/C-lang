@@ -2,13 +2,17 @@
 ## ... and some snippets
 
 
-git / dasc
+• git / dasc
 
-lint / splint
+• lint / splint
 
-make / automake
 
-Vim
+and now
+
+
+- make / automake / rebar
+
+- Vim
 
 
 
