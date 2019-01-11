@@ -1,5 +1,5 @@
 # Some DevOps tools - Quick & Dirty
-### ... and some snippets
+## ... and some snippets
 make
 
 Vim
