@@ -1,12 +1,18 @@
 # Some DevOps tools - Quick & Dirty
 ## ... and some snippets
-make
 
-Vim
 
 git / dasc
 
-Cargo / Kubernetes :: time decides :(
+lint / splint
+
+make / automake
+
+Vim
+
+
+
+& ... Cargo / Kubernetes :: time decides :(
 
 
 ## Conventions
