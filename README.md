@@ -1,5 +1,10 @@
-# The *C* Programming Style Guide for mweet.me 
-The C language from ANSI-C to the C11 edition
+# Some DevOps tools - Quick & Dirty
+
+make
+
+Vim
+
+git / dasc
 
 
 ## Conventions
