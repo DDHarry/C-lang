@@ -2,17 +2,16 @@
 ## ... and some snippets
 
 
-• git / dasc
+- git / dasc
 
-• lint / splint
+- lint / splint
 
 - make / automake / rebar
 
 - Vim
 
 
-
-& ... Cargo / Kubernetes :: time decides :(
+& ... Cargo / Kubernetes - ci/cd (c. delivery) :: time decides :(
 
 
 ## Conventions
