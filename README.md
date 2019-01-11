@@ -6,10 +6,6 @@
 
 • lint / splint
 
-
-and now
-
-
 - make / automake / rebar
 
 - Vim
